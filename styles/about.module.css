@@ -1,0 +1,23 @@
+.main {
+  text-align: center;
+}
+
+.body {
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.button {
+  margin: 10px;
+  color: red;
+  border: none;
+  outline: none;
+  font-size: 20pt;
+  border-radius: 20px;
+  background-color: white;
+}
