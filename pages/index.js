@@ -8,7 +8,10 @@ export default function Home() {
         <title>Brian's Real Estate Page</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1>asfdsaf</h1>
+      <h1>Home Page</h1>
+
+      <a href="/about">About Me</a>
+      <a href="/contact">Contact Me</a>
     </div>
   );
 }
