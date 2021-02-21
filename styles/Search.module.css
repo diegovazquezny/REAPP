@@ -1,0 +1,11 @@
+.search {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: white;
+}
+
+.search__container {
+  display: flex;
+  justify-content: center;
+}
