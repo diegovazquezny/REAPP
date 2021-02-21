@@ -1,9 +1,30 @@
+.container {
+  background-color: darkslategray;
+  height: 100vh;
+}
+
+.logoBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 2vh 45vh 2vh 45vh;
+  background-color: rgba(211, 211, 211, 0.493);
+  border-radius: 20px;
+  padding: 2px;
+}
+
+.logos {
+  margin: 1vh;
+}
+
 .main {
   text-align: center;
+  color: white;
 }
 
 .body {
   text-align: center;
+  color: white;
 }
 
 .buttons {
@@ -14,10 +35,10 @@
 
 .button {
   margin: 10px;
-  color: red;
+  color: white;
   border: none;
   outline: none;
-  font-size: 20pt;
+  font-size: 15pt;
   border-radius: 20px;
-  background-color: white;
+  background-color: darkslategray;
 }
