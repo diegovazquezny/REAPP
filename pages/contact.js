@@ -3,7 +3,7 @@ export default function Contact() {
   return (
     <div>
       <NavBar />
-      Contact
+      <p>Contact</p>
     </div>
   );
 }
