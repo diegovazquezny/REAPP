@@ -1,0 +1,61 @@
+.boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: 1vh;
+  color: white;
+}
+
+.innerBoxes {
+  border: 1pt solid white;
+  width: 50vh;
+  height: 25vh;
+  margin: 5vh;
+  padding: 1vh 5vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10vh;
+}
+
+.contactForm {
+  margin-top: 1vh;
+  margin-left: 30vh;
+  margin-right: 30vh;
+  padding: 3vh;
+  border: 1pt solid black;
+  background-color: lightgray;
+  border-radius: 5px;
+  border: 1pt solid white;
+  opacity: 0.85;
+}
+
+.inputs {
+  border: 0pt solid gray;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16pt;
+  outline: none;
+}
+
+.button {
+  width: 100%;
+  height: 4vh;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+.button:hover {
+  background-color: rgb(204, 117, 117);
+}
+
+.button:active {
+  background-color: rgb(216, 104, 104);
+  box-shadow: 0px 1px 1px;
+  transform: translateY(1px);
+}

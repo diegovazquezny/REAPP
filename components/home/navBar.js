@@ -28,9 +28,6 @@ export default function MobileNav() {
     <nav className={styles.root}>
       <div className={styles.logo}>
         <a href="/">Brian's Logo</a>
-        <a href="https://www.skylineproperties.com/" target="_blank">
-          <img src="pics/skyline.jpg" className={styles.skylineLogo}></img>
-        </a>
       </div>
       <input type="checkbox" id="click" className={styles.click} />
       <label htmlFor="click" className={styles.menuBtn}>
@@ -67,5 +64,5 @@ export default function MobileNav() {
         </li>
       </ul>
     </nav>
-  )
-};
+  );
+}

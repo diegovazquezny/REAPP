@@ -2,9 +2,9 @@ import styles from "../styles/about.module.css";
 import MobileNav from "../components/home/navBar";
 import CallIcon from "@material-ui/icons/Call";
 import EmailIcon from "@material-ui/icons/Email";
-// import Button from "@material-ui/core/Button";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import InstagramIcon from "@material-ui/icons/Instagram";
+import Footer from "../components/home/footer";
 
 export default function AboutMe() {
   function callMe() {
@@ -17,7 +17,6 @@ export default function AboutMe() {
 
   return (
     <div className={styles.container}>
-      <a href="/">Home</a>
       <MobileNav />
       <div className={styles.logoBox}>
         <a
@@ -73,6 +72,7 @@ export default function AboutMe() {
           brianhan@skylineproperties.com
         </button>
       </div>
+      <Footer />
     </div>
   );
 }

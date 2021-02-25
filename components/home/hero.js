@@ -4,9 +4,9 @@ export default function Hero() {
   return (
     <div>
       <div className={styles.heroHeader}>
-        <span className={styles.heroHeader__title}>WELCOME TO AUSTIN</span>
+        <span className={styles.heroHeader__title}>WELCOME TO DALLAS</span>
         <span className={styles.heroHeader__subtitle}>
-          Residential Sales in the Greater Austin Region
+          Residential Sales in the Greater Dallas Region
         </span>
       </div>
     </div>
