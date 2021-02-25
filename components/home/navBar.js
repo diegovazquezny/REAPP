@@ -42,11 +42,20 @@ export default function MobileNav() {
           <a href="/search" className={styles.listItemLink} onClick={hideList}>
             SEARCH
           </a>
-          <li className={styles.listItem}>
-            <a href="/about" className={styles.listItemLink} onClick={hideList}>
-              ABOUT ME
-            </a>
-          </li>
+        </li>
+        <li className={styles.listItem}>
+          <a
+            href="/testimonials"
+            className={styles.listItemLink}
+            onClick={hideList}
+          >
+            TESTIMONIALS
+          </a>
+        </li>
+        <li className={styles.listItem}>
+          <a href="/about" className={styles.listItemLink} onClick={hideList}>
+            ABOUT ME
+          </a>
         </li>
         <li className={styles.listItem}>
           <a href="/contact" className={styles.listItemLink} onClick={hideList}>
