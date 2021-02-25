@@ -47,6 +47,15 @@ export default function MobileNav() {
           </a>
         </li>
         <li className={styles.listItem}>
+          <a
+            href="/testimonials"
+            className={styles.listItemLink}
+            onClick={hideList}
+          >
+            TESTIMONIALS
+          </a>
+        </li>
+        <li className={styles.listItem}>
           <a href="/about" className={styles.listItemLink} onClick={hideList}>
             ABOUT ME
           </a>
