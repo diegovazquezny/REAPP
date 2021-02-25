@@ -47,11 +47,11 @@
 }
 
 .listItemLink:hover {
-  color:rgb(62, 96, 232);
-  text-decoration: none; 
+  color: rgb(62, 96, 232);
+  text-decoration: none;
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .bars {
     font-size: 22px;
     cursor: pointer;
@@ -74,9 +74,15 @@
   .listItem {
     margin: 40px 0;
   }
-  
+
   .listItemLink {
-    font-size: 20px;  
+    font-size: 20px;
     display: block;
   }
+}
+
+.skylineLogo {
+  width: 12vh;
+  margin-left: 20px;
+  border-radius: 10px;
 }
