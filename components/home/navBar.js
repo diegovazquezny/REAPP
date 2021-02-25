@@ -10,14 +10,14 @@ export default function MobileNav() {
   const [showNav, setShowNav] = useState(false);
 
   const hideList = (e) => {
-    listRef.current.style.left = '-50vh';
+    listRef.current.style.left = "-50vh";
     setShowNav(false);
   };
 
   const handleNav = (e) => {
     if (!showNav) {
-      listRef.current.style.left = '0px';
-      listRef.current.style.top = '60px';
+      listRef.current.style.left = "0px";
+      listRef.current.style.top = "60px";
       setShowNav(true);
     } else {
       hideList();
@@ -27,11 +27,12 @@ export default function MobileNav() {
   return (
     <nav className={styles.root}>
       <div className={styles.logo}>
-        <a href="/">
-          Brian's Logo
+        <a href="/">Brian's Logo</a>
+        <a href="https://www.skylineproperties.com/" target="_blank">
+          <img src="pics/skyline.jpg" className={styles.skylineLogo}></img>
         </a>
       </div>
-      <input type="checkbox" id="click" className={styles.click}/>
+      <input type="checkbox" id="click" className={styles.click} />
       <label htmlFor="click" className={styles.menuBtn}>
         {showNav ? (
           <CloseIcon onClick={handleNav} className={styles.bars} />
@@ -46,7 +47,11 @@ export default function MobileNav() {
           </a>
         </li>
         <li className={styles.listItem}>
-          <a href="/testimonials" className={styles.listItemLink} onClick={hideList}>
+          <a
+            href="/testimonials"
+            className={styles.listItemLink}
+            onClick={hideList}
+          >
             TESTIMONIALS
           </a>
         </li>
