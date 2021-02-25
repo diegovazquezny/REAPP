@@ -68,4 +68,4 @@ export default function MobileNav() {
       </ul>
     </nav>
   )
-}
+};
