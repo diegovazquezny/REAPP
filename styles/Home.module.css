@@ -1,16 +1,17 @@
 .container {
   min-height: 100vh;
-  padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
 .hero {
-  min-height: 300px;
-  height: 100vh;
-  background-color: darkslategray;
+  width: 100%;
+  height: 500px;
+  background-image: url("/pics/hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,7 +33,7 @@
 }
 
 .heroHeader__subtitle {
-  font-size: 1rem;
+  font-size: 2.2rem;
 }
 
 .articles {
@@ -89,4 +90,49 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.heroButton {
+  width: 200px;
+  height: 45px;
+  background-color: hsl(45deg 45% 78%);
+  border: 1px solid white;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+.heroButton:hover {
+  background-color: yellow;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  width: 100%;
+  background-color: hsl(42deg 38% 95%);
+  margin-bottom: 100px;
+}
+
+.testimonials__title {
+  font-size: 2rem;
+}
+
+.testimonials__rating {
+  font-size: 1rem;
+}
+
+.testimonials__quotes {
+  font-size: 5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.testimonials__review {
+  padding: 0 100px;
+}
+
+.testimonials__reviewer {
+  font-size: 1rem;
 }
