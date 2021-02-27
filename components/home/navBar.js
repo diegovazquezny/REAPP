@@ -1,4 +1,4 @@
-// TODO: fix list coming in from top left corner in mobile
+// TODO: disable scrolling when full screen nav is shown (after clicking on hamburger)
 
 import { useRef, useState } from "react";
 import styles from "../../styles/MobileNav.module.css";
@@ -10,7 +10,7 @@ export default function MobileNav() {
   const [showNav, setShowNav] = useState(false);
 
   const hideList = (e) => {
-    listRef.current.style.left = '-50vh';
+    listRef.current.style.left = '-100vh';
     setShowNav(false);
   };
 
@@ -44,11 +44,11 @@ export default function MobileNav() {
           <a href="/search" className={styles.listItemLink} onClick={hideList}>
             SEARCH
           </a>
+        </li>
         <li className={styles.listItem}>
           <a href="/about" className={styles.listItemLink} onClick={hideList}>
             ABOUT ME
           </a>
-        </li>
         </li>
         <li className={styles.listItem}>
           <a href="/contact" className={styles.listItemLink} onClick={hideList}>
