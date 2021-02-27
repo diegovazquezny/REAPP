@@ -62,6 +62,15 @@ export default function MobileNav() {
             CONTACT ME
           </a>
         </li>
+        <li className={styles.listItem}>
+          <a
+            href="/calculator"
+            className={styles.listItemLink}
+            onClick={hideList}
+          >
+            MORTGAGE CALCULATOR
+          </a>
+        </li>
       </ul>
     </nav>
   );

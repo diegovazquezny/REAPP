@@ -22,16 +22,10 @@ export default function Footer() {
             style={{ width: "5vh", marginRight: "20px" }}
           ></img>
         </a>
-        <a
-          href="https://www.instagram.com/brokerbrianhan/"
-          target="_blank"
-        >
+        <a href="https://www.instagram.com/brokerbrianhan/" target="_blank">
           <InstagramIcon style={{ fontSize: "5vh", marginRight: "18px" }} />
         </a>
-        <a
-          href="https://www.facebook.com/brokerbrianhan"
-          target="_blank"
-        >
+        <a href="https://www.facebook.com/brokerbrianhan" target="_blank">
           <FacebookIcon style={{ fontSize: "5vh" }} />
         </a>
         <div className={styles.footerWords}>
