@@ -12,9 +12,8 @@ export default function Footer() {
         <img src="pics/skyline.jpg" className={styles.skylineLogo}></img>
       </a>
       <br></br>
-      <div className>
+      <div>
         <a
-          className
           href="https://www.zillow.com/profile/brokerbrianhan/"
           target="_blank"
         >
@@ -24,14 +23,12 @@ export default function Footer() {
           ></img>
         </a>
         <a
-          className
           href="https://www.instagram.com/brokerbrianhan/"
           target="_blank"
         >
           <InstagramIcon style={{ fontSize: "5vh", marginRight: "18px" }} />
         </a>
         <a
-          className
           href="https://www.facebook.com/brokerbrianhan"
           target="_blank"
         >
