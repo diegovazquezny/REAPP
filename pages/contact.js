@@ -30,7 +30,7 @@ export default function ContactUs() {
   }
 
   return (
-    <div>
+    <div style={{ overflowX: "hidden" }}>
       <NavBar />
       <div className={styles.boxes}>
         <div className={styles.innerBoxes}>
@@ -63,7 +63,9 @@ export default function ContactUs() {
               border: "none",
             }}
           >
-            Book a Time
+            <a href="https://calendly.com/brokerbrianhan" target="_blank">
+              Schedule a Meeting
+            </a>
           </button>
         </div>
       </div>
