@@ -10,7 +10,7 @@ export default function MobileNav() {
   const [showNav, setShowNav] = useState(false);
 
   const hideList = (e) => {
-    listRef.current.style.left = "-50vh";
+    listRef.current.style.left = "-100vh";
     setShowNav(false);
   };
 
@@ -27,7 +27,7 @@ export default function MobileNav() {
   return (
     <nav className={styles.root}>
       <div className={styles.logo}>
-        <a href="/">Brian's Logo</a>
+        <a href="/">Brian J Han</a>
       </div>
       <input type="checkbox" id="click" className={styles.click} />
       <label htmlFor="click" className={styles.menuBtn}>
