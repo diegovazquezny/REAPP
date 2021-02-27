@@ -2,7 +2,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import NavBar from "../components/home/navBar";
 import Hero from "../components/home/hero";
-import Articles from "../components/home/articles";
+import Testimonials from "../components/home/testimonials";
 import Footer from "../components/home/footer";
 
 export default function Home() {
@@ -12,14 +12,10 @@ export default function Home() {
         <title>Brian Han Real Estate</title>
         <link rel="icon" href="/logo.png" />
       </Head>
-      <div className={styles.hero}>
-        <NavBar />
-        <Hero />
-      </div>
-      <Articles />
+      <NavBar />
+      <Hero />
+      <Testimonials />
       <Footer />
     </div>
   );
 }
-
-// https://andrewcpark.com/
