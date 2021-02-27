@@ -1,3 +1,8 @@
+@font-face {
+  font-family: reey;
+  src: url(../public/fonts/Reey-Regular.otf);
+}
+
 .root {
   display: flex;
   top: 0;
@@ -18,6 +23,7 @@
   font-weight: 600;
   margin-left: 50px;
   z-index: 200;
+  font-family: reey;
 }
 
 .bars {
