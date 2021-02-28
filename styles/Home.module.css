@@ -124,15 +124,20 @@
 
 .testimonials__title {
   font-size: 2rem;
+  letter-spacing: 3px;
   margin: 0;
   padding: 0;
 }
 
 .testimonials__rating {
   font-size: 1rem;
+  margin: 16px 0;
+  letter-spacing: 2px;
+  font-weight: bold;
 }
 
-.testimonials__quotes {
+.testimonials__quotes, 
+.testimonials__bottom_quotes {
   font-family: space-grotesk;
   font-size: 8rem;
   line-height: 25%;
@@ -141,23 +146,55 @@
   color: hsl(41deg 33% 51%);
 }
 
-.testimonials__review {
-  padding: 0 150px;
+.testimonials__bottom_quotes {
+  margin-top: 85px;
+  line-height: 5%;
+}
+
+.testimonials__description {
+  padding: 0 350px;
   font-size: 1.2rem;
   line-height: 135%;
-  word-spacing: 3px;
+  letter-spacing: 2px;
+  color: hsl(20deg 2% 31%);
+  margin: 0 0 16px 0;
 }
 
 .testimonials__reviewer {
-  font-size: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: hsl(20deg 2% 31%);
+  margin-bottom: 10px;
 }
 
-@media (max-width: 768px) {
-  .testimonials__review {
-    padding: 0 50px;
+.testimonials__reviewer:hover {
+  text-decoration: underline;
+}
+
+.testimonials__reviewDate {
+  font-size: 1rem;
+  color: hsl(20deg 2% 31%);
+  margin: 0;
+}
+
+
+@media (max-width: 1270px) {
+  .testimonials__description {
+    padding: 0 250px;
   }
 }
 
+@media (max-width: 1000px) {
+  .testimonials__description {
+    padding: 0 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials__description {
+    padding: 0 50px;
+  }
+}
 
 @media (max-width: 550px) {
   .heroHeader__title {
@@ -165,7 +202,7 @@
     margin-bottom: 10px;
   }
 
-  .testimonials__review {
+  .testimonials__description {
     padding: 0 30px;
   }
   

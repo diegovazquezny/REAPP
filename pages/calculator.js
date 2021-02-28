@@ -1,4 +1,6 @@
+import Footer from "../components/home/footer";
 import MobileNav from "../components/home/navBar";
+import styles from '../styles/Calculator.module.css';
 
 export default function Calculator() {
   return (
@@ -38,17 +40,13 @@ export default function Calculator() {
       >
         <iframe
           src="https://www.mortgagecalculator.org/webmasters/?downpayment=50000&homevalue=300000&loanamount=250000&interestrate=4&loanterm=30&propertytax=2400&pmi=1&homeinsurance=1000&monthlyhoa=0"
-          style={{
-            width: "80%",
-            height: "1200px",
-            border: "0",
-          }}
+          className={styles.root}
         ></iframe>
-        <div
+        {/* <div
           style={{
             fontFamily: "Arial",
             height: "36px",
-            top: "-36px",
+            top: '0',
             padding: "0 8px 0 0",
             boxSizing: "border-box",
             textAlign: "right",
@@ -68,8 +66,9 @@ export default function Calculator() {
             Javascript Mortgage Calculator
           </a>
           by MortgageCalculator.org
-        </div>
+        </div> */}
       </div>
+      <Footer />
     </div>
   );
 }
