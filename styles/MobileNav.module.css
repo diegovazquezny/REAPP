@@ -9,13 +9,14 @@
   left: 0;
   right: 0;
   height: 110px;
-  width: 100vw;
+  width: 100%;
   background: none;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid black;
   z-index: 200;
   color: white;
+  position: sticky;
+  background-color: white;
 }
 
 .logo {
@@ -59,8 +60,9 @@
   text-decoration: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1250px) {
   .bars {
+    color: #0e0e0e;
     font-size: 22px;
     cursor: pointer;
     display: block !important;
@@ -70,8 +72,8 @@
   .list {
     position: fixed;
     left: -100%;
-    background-color: darkslategray;
-    height: 50vh;
+    background-color: white;
+    height: 100vh;
     width: 100%;
     display: block;
     text-align: center;
@@ -86,5 +88,11 @@
   .listItemLink {
     font-size: 20px;
     display: block;
+  }
+}
+
+@media (max-width: 450px) {
+  .logo {
+    font-size: 23px;
   }
 }
