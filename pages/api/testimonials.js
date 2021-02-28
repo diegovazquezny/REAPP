@@ -20,18 +20,19 @@ const options = {
   stopNodes: ["parse-me-as-string"]
 };
 
-export default (req, res) => {
+export default async (req, res) => {
+  let data;
   const API_URL = 'http://www.zillow.com/webservice/ProReviews.htm';
-  const ID = process.env.ID;
-  const SCREEN_NAME = process.env.SCREEN_NAME;
-
-  fetch(`${API_URL}?zws-id=${ID}&screenname=${SCREEN_NAME}`)
-    .then(res => res.text())
-    .then(xml => parser.getTraversalObj(xml,options))
-    .then(xml => parser.convertToJson(xml,options))
-    .then(data => res.status(200).json({ data }))
-    .catch(err => { 
-      console.log(err);
-      return res.status(500).json({message: err});
-    });
+  const { ID } = process.env;
+  const { SCREEN_NAME } = process.env;
+  try {
+    const response =  await fetch(`${API_URL}?zws-id=${ID}&screenname=${SCREEN_NAME}`);
+    const xml = await response.text();
+    const xmlObj = await parser.getTraversalObj(xml,options);
+    data = await parser.convertToJson(xmlObj,options);
+  } catch (error) {
+    console.log(err);
+    return res.status(500).json({message: err});
+  }
+  return res.status(200).json({ data });
 }

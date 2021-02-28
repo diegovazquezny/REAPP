@@ -1,23 +1,6 @@
 import styles from "../../styles/Home.module.css";
 import { useEffect, useState } from 'react';
 
-const REVIEW = `
-Lorem ipsum dolor sit amet, consectetur 
-adipiscing elit, sed do eiusmod tempor incididunt 
-ut labore et dolore magna aliqua. Ut enim ad 
-minim veniam, quis nostrud exercitation ullamco 
-laboris nisi ut aliquip ex ea commodo consequat. 
-Duis aute irure dolor in reprehenderit in voluptate 
-velit esse cillum dolore eu fugiat nulla pariatur. 
-Excepteur sint occaecat cupidatat non proident, 
-sunt in culpa qui officia deserunt mollit anim id 
-est laborum.
-`;
-const reviewer = 'John Doe';
-
-console.log(process.env.NEXT_PUBLIC_ID);
-console.log(process.env.ID);
-
 export default function Hero() {
   const [testimonial, setTestimonial] = useState({});
   const [fetched, setFetched] = useState(false);
@@ -32,7 +15,6 @@ export default function Hero() {
         .then(res => res.json())
         .then(data => {
           const review = data.data['ProReviews:proreviewresults'].response.result.proReviews.review[0];
-          console.log('rrr ===>', review)
           setTestimonial(state => {
             const newState = {...state};
             newState.description = review.description;
@@ -43,12 +25,11 @@ export default function Hero() {
             return newState;
           })
           setFetched(true);
-          console.log('test =>', testimonial);
         })
         .catch(err => console.log(err));
     }
-  })
-  console.log(fetched);
+  });
+  
   return (
     <div className={styles.testimonials}>
       <div>
