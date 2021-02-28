@@ -40,12 +40,13 @@ export default function Hero() {
             newState.reviewURL = review.reviewURL;
             return newState;
           })
-          console.log(testimonial);
+          setFetched(true);
+          console.log('test =>', testimonial);
         })
         .catch(err => console.log(err));
     }
   })
-
+  console.log(fetched);
   return (
     <div className={styles.testimonials}>
       <div>
@@ -54,14 +55,19 @@ export default function Hero() {
         </div>
       </div>
       <h2 className={styles.testimonials__title}>Testimonials</h2>
-      <div className={styles.testimonials__rating}>{rating}</div>      
-      <p className={styles.testimonials__review}>{REVIEW}</p>
-      <p className={styles.testimonials__reviewer}>{reviewer}</p>
+      { !fetched 
+        ?
+          <>
+            <div className={styles.testimonials__rating}>{rating}</div>      
+            <p className={styles.testimonials__review}>{REVIEW}</p>
+            <p className={styles.testimonials__reviewer}>{reviewer}</p>
+          </>
+        : null
+      }
       <div>
         <div className={styles.testimonials__quotes}>
-        ”
+          ”
         </div> 
-
       </div>
     </div>
   );
