@@ -10,14 +10,14 @@ export default function MobileNav() {
   const [showNav, setShowNav] = useState(false);
 
   const hideList = (e) => {
-    listRef.current.style.left = "-100vh";
+    listRef.current.style.left = "-100vw";
     setShowNav(false);
   };
 
   const handleNav = (e) => {
     if (!showNav) {
       listRef.current.style.left = "0px";
-      listRef.current.style.top = "60px";
+      listRef.current.style.top = "90px";
       setShowNav(true);
     } else {
       hideList();
